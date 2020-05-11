@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link current">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="main-message">
+            <h1>Linde.</h1>
+            <h1>Front-end Developer.</h1>
+            <p>
+              I like to design and code user-friendly websites. Nice to meet
+              you.
+            </p>
+            <a href="#about" class="btn hero-btn">
+              <i class="fas fa-chevron-down"></i>learn more
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- hero ends -->
+
+      <section class="about-me" id="about">
+        <div class="container">
+          <div class="about-me-container">
+            <div class="about-me-img">
+              <img src="images/Linde foto 2b.jpeg" alt="Linde Sleven" />
+            </div>
+            <div class="about-me-content">
+              <h1>About me</h1>
+              <h3>Get a deeper insight into who I am as a person</h3>
+              <p>
+                Hi, I'm Linde. I’m a junior front-end developer looking for a
+                new role in an exciting company. I focus on writing accessible
+                HTML, using modern CSS practices and writing clean JavaScript.
+                When writing JavaScript code, I mostly use React, but I can
+                adapt to whatever tools are required. When I’m not coding,
+                you’ll find me outdoors. I love being out in nature and
+                travelling to the east. I’d love you to check out my work.
+              </p>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/LindeSleven"
+                      target="_blank"
+                      class="icon-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/linde-sleven/"
+                      target="_blank"
+                      class="icon-link"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about ends -->
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="portfolio-container">
+            <div class="portfolio-heading">
+              <h1>Portfolio</h1>
+              <h3>View some of my recent work</h3>
+            </div>
+
+            <div class="portfolio-grid">
+              <div class="portfolio-grid-item" id="project1">
+                <div class="grid-img">
+                  <img src="images/bookmark-mockup.png" alt="project 1" />
+                </div>
+                <div class="grid-description">
+                  <h2 class="grid-title">Bookmark landing page</h2>
+                  <p class="grid-text">
+                    This is a challenge of
+                    <a
+                      target="_blank"
+                      href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158"
+                      >front end mentor</a
+                    >. The goal was to recreate a given design (JPG format) and
+                    get it looking as close to the design as possible. I took
+                    this chance to use a style pre-processor (Sass) and to
+                    further strengthen my front-end skills.
+                  </p>
+                </div>
+                <a href="#project1-modal" class="btn grid-btn" id="btn"
+                  >View Details</a
+                >
+              </div>
+
+              <!-- modal -->
+              <div class="modal" id="project1-modal">
+                <div class="modal-content">
+                  <a href="#project1" class="close"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                  <div class="modal-left">
+                    <img
+                      src="images/bookmark-1.png"
+                      alt="Bookmark Landing Page"
+                      class="modal-img-1"
+                    />
+                    <img
+                      src="images/bookmark-1.png"
+                      alt="Bookmark Landing Page"
+                      class="modal-img-2"
+                    />
+                  </div>
+                  <div class="modal-right">
+                    <h1>Bookmark Landing Page</h1>
+                    <p>
+                      This project was created for a challenge of
+                      <a
+                        target="_blank"
+                        href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+                        >front end mentor</a
+                      >. The goal was to recreate a given design (JPG format)
+                      and get it looking as close to the design as possible. I
+                      took this chance to use a style pre-processor (Sass) and
+                      to further strengthen my front-end skills.
+                    </p>
+                    <p>
+                      Functional requirements: optimal layout depending on the
+                      device screen size, hover states for all interactive
+                      elements on the page, receive an error message when the
+                      newsletter form is submitted if the input field is empty
+                      or if the email address is not formatted correctly.
+                    </p>
+                    <p>
+                      Technologies used:
+                    </p>
+                    <p>
+                      <span class="tech"
+                        ><i class="fab fa-html5"></i>HTML5</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-css3-alt"></i>CSS3</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-css3-alt"></i>CSS3: flexbox</span
+                      >
+                      <span class="tech"><i class="fab fa-sass"></i>Sass</span>
+                      <span class="tech"
+                        ><i class="fab fa-js"></i>JavaScript</span
+                      >
+                    </p>
+                    <div class="links">
+                      <a
+                        href="https://github.com/LindeSleven/bookmark-landing-page"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fab fa-github"></i>View my code</a
+                      >
+                      <a
+                        href="https://bookmark-landing-page.lindesleven.now.sh/"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fas fa-link"></i>Visit live site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-grid-item" id="project2">
+                <div class="grid-img">
+                  <img src="images/social-media-mockup-2.png" alt="project 2" />
+                </div>
+                <div class="grid-description">
+                  <h2 class="grid-title">Social Media Dashboard</h2>
+                  <p class="grid-text">
+                    Social media dashboard with theme switcher (light/dark).
+                    This is a challenge of
+                    <a
+                      target="_blank"
+                      href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+                      >front end mentor</a
+                    >. The goal was to recreate a given design (JPG format) and
+                    get it looking as close to the design as possible. 
+                  </p>
+                </div>
+                <a href="#project2-modal" class="btn grid-btn">View Details</a>
+              </div>
+
+              <!-- modal -->
+              <div class="modal" id="project2-modal">
+                <div class="modal-content">
+                  <a href="#project2" class="close"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                  <div class="modal-left">
+                    <img
+                      src="images/social-media-light.png"
+                      alt="social media dashboard light"
+                      class="modal-img-1"
+                    />
+                    <img
+                      src="images/social-media-dark.png"
+                      alt="social media dashboard dark"
+                      class="modal-img-2"
+                    />
+                  </div>
+                  <div class="modal-right">
+                    <h1>Social Media Dashboard</h1>
+                    <p>
+                      This project was created for a challenge of
+                      <a
+                        target="_blank"
+                        href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+                        >front end mentor</a
+                      >. The goal was to recreate a given design (JPG format)
+                      and get it looking as close to the design as possible. I
+                      took this chance to practice using CSS grid to create the
+                      two different grids (total followers and overview). 
+                      I also used flexbox to align everything perfectly.
+                      I used JavaScript to create the theme switcher
+                      (light/dark). A slightly different design was used for the
+                      mobile version.
+                    </p>
+                    <p>
+                      Functional requirements: optimal layout (laptop/mobile), 
+                      hover states for all interactive elements on the page,
+                       toggle color theme
+                    </p>
+                    <p>
+                      Technologies used:
+                    </p>
+                    <p>
+                      <span class="tech"
+                        ><i class="fab fa-html5"></i>HTML5</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-css3-alt"></i>CSS3</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-css3-alt"></i>CSS3: flexbox</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-css3-alt"></i>CSS3: grid</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-js"></i>JavaScript</span
+                      >
+                    </p>
+                    <div class="links">
+                      <a
+                        href="https://github.com/LindeSleven/social-media-dashboard"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fab fa-github"></i>View my code</a
+                      >
+                      <a
+                        href="https://social-media-dashboard-pied.now.sh/"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fas fa-link"></i>Visit live site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-grid-item" id="project3">
+                <div class="grid-img">
+                  <img src="images/factory-mockup.png" alt="project 3" />
+                </div>
+                <div class="grid-description">
+                  <h2 class="grid-title">Factory</h2>
+                  <p class="grid-text">
+                    Factory is a maintance application for a fictive factory.
+                    The application consists of a floor plan with different
+                    production lines, packaging lines and lighting. This react
+                    app was created as a school assignment (Web Interfaces
+                    course, score 19/20).
+                  </p>
+                </div>
+                <a href="#project3-modal" class="btn grid-btn">View Details</a>
+              </div>
+
+              <!-- modal -->
+              <div class="modal" id="project3-modal">
+                <div class="modal-content">
+                  <a href="#project3" class="close"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                  <div class="modal-left">
+                    <img
+                      src="images/factory-1.png"
+                      alt="factory screenshot"
+                      class="modal-img-1"
+                    />
+                    <img
+                      src="images/factory-2.png"
+                      alt="factory screenshot"
+                      class="modal-img-2"
+                    />
+                  </div>
+                  <div class="modal-right">
+                    <h1>Factory</h1>
+                    <p>
+                      Factory is a maintance application for a fictive factory.
+                      The application consists of a floor plan with different
+                      production lines, packaging lines and lighting. This react
+                      app was created as a school assignment (Web Interfaces
+                      course).
+                    </p>
+                    <p>
+                      Functional requirements: list/floorplan view, specific
+                      hall and machine URL, form to adjust machine information,
+                      emergency button (on three levels), tooltip, possibility
+                      to change the colors of the interface.
+                    </p>
+                    <p>
+                      Technologies used:
+                    </p>
+                    <p>
+                      <span class="tech"
+                        ><i class="fab fa-js"></i>JavaScript</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-react"></i>React</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-bootstrap"></i>Bootstrap</span
+                      >
+                      <span class="tech"
+                        ><i class="fab fa-css3-alt"></i>CSS3</span
+                      >
+                    </p>
+                    <div class="links">
+                      <a
+                        href="https://github.com/LindeSleven/factory"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fab fa-github"></i>View my code</a
+                      >
+                      <a
+                        href="https://factory.lindesleven.now.sh"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fas fa-link"></i>Visit live site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--
+              <div class="portfolio-grid-item" id="project4">
+                <div class="grid-img">
+                  <img src="https://via.placeholder.com/150" alt="project 4" />
+                </div>
+                <div class="grid-description">
+                  <h2 class="grid-title">Bookmark Landing Page</h2>
+                  <p class="grid-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit
+                  </p>
+                </div>
+                <a href="#project4-modal" class="btn grid-btn">View Details</a>
+              </div>-->
+
+              <!-- modal -->
+              <!--
+              <div class="modal" id="project4-modal">
+                <div class="modal-content">
+                  <a href="#project4" class="close"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                  <div class="modal-left">
+                    <img
+                      src="images/social-media-light.png"
+                      alt="social media dashboard light"
+                      class="modal-img-1"
+                    />
+                    <img
+                      src="images/social-media-dark.png"
+                      alt="social media dashboard dark"
+                      class="modal-img-2"
+                    />
+                  </div>
+                  <div class="modal-right">
+                    <h1>Naam project</h1>
+                    <p>
+                      This project was created for a challenge of
+                      <a
+                        target="_blank"
+                        href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+                        >front end mentor</a
+                      >. The goal was to recreate a given design (JPG format)
+                      and get it looking as close to the design as possible. I
+                      took this chance to use a style pre-processor (Sass) and
+                      to further strengthen my front-end skills.
+                    </p>
+                    <p>
+                      Functional requirements: optimal layout depending on the
+                      device screen size, hover states for all interactive
+                      elements on the page, receive an error message when the
+                      newsletter form is submitted if the input field is empty
+                      or if the email address is not formatted correctly.
+                    </p>
+                    <p>
+                      Technologies used:
+                    </p>
+                    <p>
+                      <span class="tech">HTML5</span>
+                      <span class="tech">CSS3</span>
+                      <span class="tech">CSS3: flexbox</span>
+                      <span class="tech">Sass</span>
+                      <span class="tech">JavaScript</span>
+                    </p>
+                    <div class="links">
+                      <a
+                        href="https://github.com/LindeSleven/social-media-dashboard"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fab fa-github"></i>View my code</a
+                      >
+                      <a
+                        href="https://social-media-dashboard-pied.now.sh/"
+                        target="_blank"
+                        class="btn link-btn"
+                        ><i class="fas fa-link"></i>Visit live site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          
+          </div>
+        </div>
+      </section>
+      <!-- portfolio ends -->
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-container">
+            <div class="contact-heading">
+              <h1>Say hello</h1>
+              <h3>Let's work together</h3>
+            </div>
+            <form
+              action="https://formspree.io/maypyjwz"
+              method="POST"
+              id="form"
+              class="form"
+            >
+              <div class="form-control">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="Name"
+                  placeholder="Enter your name..."
+                />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="_replyto"
+                  placeholder="Enter your email..."
+                />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="msg">Message:</label>
+                <textarea
+                  name="Message"
+                  id="msg"
+                  cols="10"
+                  rows="10"
+                ></textarea>
+                <small>Error message</small>
+              </div>
+              <button class="btn form-btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- contact ends -->
+    </main>
+
+    <footer class="copyright">
+      <div class="back-to-top">
+        <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+      </div>
+      <p>&copy; 2020 Linde Sleven</p>
+    </footer>
+    <!-- footer ends -->
+  </body>
+</html>
+
+<!-- 
+          <div style="height: 100%; overflow: hidden;">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%;"
+          >
+            <path
+              d="M-3.64,148.52 C107.87,12.33 375.35,256.08 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+              style="stroke: none; fill: #08f;"
+            ></path>
+          </svg>
+        </div>
+-->
