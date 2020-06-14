@@ -169,6 +169,7 @@ header {
   padding: 3rem 0 5rem 0;
 }
 
+
 .hero-btn i {
   padding-right: 1rem;
 }
@@ -209,14 +210,14 @@ header {
   padding: 3rem 0;
 }
 
-.social-media ul {
+.about-me-links ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-media li {
+.about-me-links li{
   margin-right: 3rem;
 }
 
@@ -282,7 +283,6 @@ header {
   z-index: 1;
 }
 
-
 /*PORTFOLIO - MODAL*/
 
 .modal {
@@ -334,6 +334,11 @@ header {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
+  margin-right: 2rem;
+}
+
+.modal-img-1 {
+  padding-bottom: 1rem;
 }
 
 .modal-img-1, .modal-img-2 {
@@ -341,6 +346,7 @@ header {
   height: 50%;
   width: auto;
   margin: auto;
+  object-fit: cover;
 }
 
 .modal-right {
@@ -513,6 +519,25 @@ footer {
   animation: up 2s infinite;
 }
 
+footer .social-media {
+  margin-top: 2rem;
+}
+
+footer .social-media ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media li:first-of-type {
+  margin-right: 1.5rem;
+}
+
+.social-media li:nth-of-type(2){
+  margin-left: 1.5rem;
+}
+
 /* ANIMATIONS */
 
 @keyframes up {
@@ -546,12 +571,10 @@ footer {
   html {
     font-size: 50%;
   }
-
   .modal-right {
     padding-left: 2rem;
   }
 }
-
 
 @media screen and (max-width: 700px) {
   section {
@@ -627,11 +650,9 @@ footer {
     text-align: center;
     padding: 0 3rem 3rem 3rem;
   }
-
   .about-me-img img {
     border-radius: 50%;
   }
-  
   /* PORTFOLIO - MODAL */
   .modal-left {
     display: none;
@@ -665,7 +686,6 @@ footer {
   .modal-right .link-btn {
     width: 100%;
   }
-
   .about-me-content p {
     text-align: left;
   }
